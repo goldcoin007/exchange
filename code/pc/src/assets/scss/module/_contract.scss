@@ -1,0 +1,256 @@
+.contract-page {
+    background: #e0e3eb;
+    .bg-plain {
+        background: $cls-white;
+    }
+    .page-top {
+        padding-top: 1px;
+
+        .kline-box {
+            background: $cls-white;
+
+            .coin-change {
+                height: 50px;
+
+                .icon {
+                    height: 24px;
+                }
+            }
+        }
+        .left{
+            width: 250px;
+            padding: 0 5px!important;
+            tr{
+                th{
+                    padding: 0!important;
+                }
+                td{
+                    padding: 0!important;
+                    padding:5px 0!important;
+                    font-size: 12px;
+                }
+            }
+        }
+        .handicapRight{
+            width: 250px!important;
+            // display: flex;
+            // flex-wrap: wrap;
+            .w-100{
+                width: 100%;
+            }
+        }
+        .handicap {
+            // width: 200px;
+            width: 250px;
+            .handicap-body {
+                .item {
+                    position: relative;
+                    .pgs {
+                        position: absolute;
+                        right: 0;
+                        height: 100%;
+                        top: 0;
+                    }
+                }
+                .sell,
+                .buy {
+                    // height: 310px;
+                    height: 250px;
+                    overflow: auto;
+                }
+                .sell {
+                    .pgs {
+                        background: rgba(216, 43, 43, 0.15);
+                    }
+                }
+                .buy {
+                    .pgs {
+                        background: rgba(37, 188, 103, 0.15);
+                    }
+                }
+            }
+        }
+        .exchange-store {
+            // width: 320px;
+            .list {
+                .item:hover {
+                    background: #f5f7fa;
+                }
+            }
+        }
+        .bill-list {
+            background: $cls-white;
+
+            .list {
+                height: 565px;
+                overflow: auto;
+            }
+        }
+    }
+
+    .page-bottom {
+        min-height: 200px;
+    }
+    .account {
+        width: 250px;
+    }
+}
+
+.dark-app {
+    $header: #2b2839;
+    $page-bg: #141e2c;
+    $head: #1e2834;
+    $panel:#222e3d;
+    $panel-1: #455c71;
+    $border: #2a2e39;
+    $color: #c0c4cc;
+
+    background: $page-bg;
+    color: $color;
+    .contract-page {
+        background: $page-bg;
+    }
+    #common-header {
+        background: $header;
+        border-bottom-color: $page-bg;
+    }
+
+    .markets-pair-list .nav {
+        background: $head;
+    }
+
+    .heading {
+        background: $head;
+        color: $color;
+    }
+
+    .bg-light,
+    .bg-plain {
+        background-color: $head !important;
+    }
+    .border-right {
+        border-right-color: $border !important;
+    }
+    .form-control {
+        background-color: transparent;
+        border-color: #6c757d;
+        color: $color;
+    }
+
+    header nav a {
+        color: $color;
+    }
+
+    header nav a:hover {
+        color: #007bff;
+    }
+
+    .tab-content {
+        background: $panel;
+    }
+
+    .table {
+        td,
+        th {
+            border-top-color: $border;
+        }
+
+        tr:hover {
+            background: $page-bg;
+        }
+    }
+    tbody tr {
+        color: $color;
+    }
+    .nav-link {
+        color: $color;
+    }
+    .theme-switch .theme-switch-button .left,
+    .theme-switch .theme-switch-button .right {
+        color: $color;
+    }
+    .border {
+        border-color: $border !important;
+    }
+    .el-collapse-item__wrap {
+        background: $panel-1;
+        border-color: $border;
+    }
+
+    .el-popper[x-placement^="bottom"] .popper__arrow::after {
+        border-bottom-color: $panel-1;
+    }
+    .el-collapse-item__content {
+        color: $color;
+    }
+    .el-popover,
+    .el-collapse-item__header,
+    .el-dropdown-menu {
+        background: $panel-1;
+        color: $color;
+        border-color: $border;
+    }
+    .el-dropdown-menu__item {
+        color: $color;
+    }
+    .el-select-dropdown__item {
+        color: $color;
+    }
+    .el-pagination button:disabled,
+    .el-dialog,
+    .el-pager li {
+        background: transparent;
+    }
+    .el-button {
+        background: $page-bg;
+        border-color: $border;
+    }
+}
+.light-app {
+    background-color: #fff;
+    color: #333;
+    #common-header {
+        background: #fff;
+        color: #18214d;
+        border-bottom:1px solid #f0f3fa;
+    }
+    .markets-pair-list .nav-link.active {
+        color: #c99445;
+        &::after {
+            background-color: #c99445;
+        }
+    }
+    .heading {
+        background-color: #f5f9fc;
+    }
+    .form-control,
+    .el-input__inner,
+    .el-focus,
+    .el-range-editor.is-active,
+    .el-input.el-date-editor .el-input__inner:focus,
+    .el-input.is-focus .el-input__inner,
+    .el-range-editor.is-active,
+    .el-input.el-date-editor .el-input__inner:focus,
+    .el-input.is-focus .el-input__inner {
+        background-color: transparent;
+        color: #333;
+    }
+    .table{
+        color: #797979;
+        td{
+            border-top-color:#f0f3fa;
+        }
+    }
+    tbody tr:hover{
+        background-color: #f6f8f9;
+    }
+    .border-bottom{
+        border-bottom-color:#f0f3fa !important;
+    }
+    .border-top{
+        border-top-color:#f0f3fa !important;
+    }
+}
+.fn-center{
+    text-align: center;
+}

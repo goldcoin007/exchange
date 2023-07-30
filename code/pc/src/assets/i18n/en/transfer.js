@@ -1,0 +1,26 @@
+const transfer = {
+    title:`Internal Transfer`,
+    exchange:`Exchange Account`,
+    forex:`Crypto FX Contracts Account`,
+    crypto:`Perpetual Swap Account`,
+    instructions:`Instructions`,
+    dec1:`Please note that internal transfers are free and automatic. `,
+    dec2:`Only USDT shall be transferred to your Crypto FX Contract Account.`,
+    dec3:`Only BTC shall be transferred to your Perpetual Swap Account.`,
+    dec4:`If you wish to trade Crypto FX Contract, you must transfer USDT to your Crypto FX Account first as margin. `,
+    dec5:`If you wish to trade Perpetual Swap, you must transfer BTC to your Perpetual Swap Account first as margin.`,
+    USDT:`USDT History`,
+    BTC:`BTC History`,
+    all:`All Assets History`,
+    asset:`Asset`,
+    amount:`Amount`,
+    from:`From`,
+    to:`To`,
+    time:`Time`,
+    status:`Status`,
+    success:`Success`,
+    blog:'VirgoX Academy',
+    slogan:'Grow Your Crypto Here',
+    article_blank:'No content, stay tuned!'
+}
+export default transfer

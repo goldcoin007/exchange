@@ -1,0 +1,26 @@
+const transfer = {
+    title:`资金划转`,
+    exchange:`现货账户`,
+    forex:`外汇合约账户`,
+    crypto:`永续合约账户`,
+    instructions:`资金划转说明`,
+    dec1:`请注意内部资金划转是自动完成的，并且免手续费。`,
+    dec2:`只有USDT可被划转至您的外汇合约账户。`,
+    dec3:`只有BTC可被划转至您的永续合约账户。`,
+    dec4:`如果您想要交易外汇合约，您必须划转USDT至外汇合约账户中，当做保证金。`,
+    dec5:`如果您想要交易永续合约，您必须划转BTC至永续合约账户中，当做保证金。`,
+    USDT:`USDT 划转记录`,
+    BTC:`BTC 划转记录`,
+    all:`所有资产划转记录`,
+    asset:`资产`,
+    amount:`划转数量`,
+    from:`从`,
+    to:`至`,
+    time:`时间`,
+    status:`状态`,
+    success:`划转成功`,
+    blog:'V网学院',
+    slogan:'洞察全局 尽享资讯',
+    article_blank:'暂无内容，敬请期待！'
+}
+export default transfer

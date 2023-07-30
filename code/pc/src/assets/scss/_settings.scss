@@ -1,0 +1,56 @@
+// 通用的配置
+$primary : 1420 + px;
+
+// 正文字号
+$fsize : 13 + px;
+
+// 图标文件路径 带有/等特殊字符的值 需要使用~转义
+$icon-name : ionicons;
+$icon-path : "~@/assets/icon";
+
+// 定义中英文字体 键值对的形式
+$overpasses : (Overpass-Regular : "~@/assets/fonts/overpass/Overpass-Regular.woff2",
+				Overpass-Light : "~@/assets/fonts/overpass/Overpass-Light.woff2",
+				Overpass-Bold : "~@/assets/fonts/overpass/Overpass-Bold.woff2",
+				Overpass-SemiBold : "~@/assets/fonts/overpass/Overpass-SemiBold.woff2");
+
+$opensans : (OpenSans-Regular : "~@/assets/fonts/opensans/OpenSans-Regular.ttf",
+			OpenSans-Bold :  "~@/assets/fonts/opensans/OpenSans-Bold.ttf");
+
+// 默认字体 中英文
+$face : Overpass-Regular, OpenSans-Regular, 'Microsoft YaHei';
+
+// 页面底色
+$underpainting : rgba(247,246,251,1);
+
+// 主体颜色
+$clr : rgba(0,0,0, 0.85); // 字体颜色
+$fontclr : rgba(0,0,0, 0.85); // 别名
+
+// 经典浅紫色
+$cls-purple : rgba(115,88,168,1);
+$cls-blue : #007bff;
+
+// 字体主体灰
+$cls-gray: rgba(193,184,213,1);
+
+// 字体主体黑
+$cls-black: rgba(77,67,93,1);
+
+$cls-white:rgba(255,255,255,1);
+
+// exchange & contract
+$decreace : #ff231f; // 酒红色
+// $increace: #26de81; // 青绿色
+$increace : #53b987;
+
+// status
+$success : green;
+$fail : red;
+$pending : yellow;
+
+// tips
+$caution : rgba(255, 86, 146, 1);
+
+// disabled 
+$dim : rgba(#333, .5);

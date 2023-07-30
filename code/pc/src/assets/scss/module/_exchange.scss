@@ -1,0 +1,67 @@
+.dark-app {
+  $header: #2b2839;
+  $page-bg: #141e2c;
+  $head: #1e2834;
+  $panel:#222e3d;
+  $panel-1: #455c71;
+  $border: #2a2e39;
+  $color: #c0c4cc;
+  
+    background: $page-bg;
+    .market-pairs,.order-book,.market-history,.market-news,.market-order{
+      border-color: $border;
+    }
+    .exchange-history .nav,.market-history .nav{
+      background: $head;
+    }
+    .market-trade .nav .nav-item .nav-link.active{
+      background-color: transparent;
+    }
+    .market-trade .input-group-text{
+      background-color:$page-bg ;
+    }
+     .input-group-text{
+      border-color: #6c757d;
+    }
+    .market-trade-list li a{
+      background-color:$page-bg ;
+    }
+    .market-trade-sell{
+      border-color: $border;
+    }
+    .market-pairs .nav,.highlight,.market-trade .nav{
+      background: $head;
+    }
+    .order-book thead tr{
+      border-color: $border;
+    }
+    .ob-heading tr{
+      border-top-color: $border !important;
+      border-bottom-color: $border !important;
+    }
+    .order-item:nth-child(odd) .progress .el-progress-bar__outer{
+      background: $panel;
+    }
+    .order-item:nth-child(even ) .progress .el-progress-bar__outer{
+      background: $head;
+    }
+    .market-trade p,.market-trade-list li a,.market-news li a,.market-news li strong{
+      color: $color;
+    }
+    .market-news li{
+      border-color: $border;
+    }
+    .market-news li:hover{
+      background-color: $panel;
+    }
+  }
+  .light-app{
+    .form-control{
+      background-color: transparent !important;
+      color: #333 !important;
+      border-color: #e0e3eb !important;
+    }
+    .table{
+      color: #797979 !important;
+    }
+  }

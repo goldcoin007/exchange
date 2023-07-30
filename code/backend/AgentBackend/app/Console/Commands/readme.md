@@ -1,0 +1,1 @@
+#自动化机器人免费版不提供，需请联系Telegram: @goldcoin007

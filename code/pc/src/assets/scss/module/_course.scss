@@ -1,0 +1,106 @@
+.course-page {
+    background: #141e2c;
+    color: white;
+    .banner {
+        background: linear-gradient(left, #0e1736, #080e26);
+        color: #5e6da1;
+
+        .left {
+            .list {
+                .num {
+                    font-style: 18px;
+                    font-weight: bold;
+                    background: linear-gradient(left, #3962d8, #080e26);
+                    border-radius: 2px;
+                    padding: 0 4px;
+                    margin-top: 4px;
+                    margin-right: 4px;
+                    transform: skewX(-8deg);
+                }
+
+                .label {
+                    padding: 4px 0 4px 2px;
+                    color: #a9b4db;
+                }
+            }
+        }
+
+        .right {
+            .video {
+                width: 100%;
+                height: 400px;
+                background: #fff;
+            }
+        }
+
+        .banner-tab {
+            $borderColor: rgba(94, 109, 161, .1);
+            border-top: 1px solid $borderColor;
+
+            .item {
+                padding: 18px;
+                border-left: 1px solid $borderColor;
+                cursor: pointer;
+
+                .icon {
+                    .default {
+                        display: block;
+                    }
+
+                    .iconshow {
+                        display: none;
+                    }
+                }
+
+                &:last-of-type {
+                    border-right: 1px solid $borderColor;
+                }
+
+                &.active,
+                &:hover {
+                    color: #fff;
+                    background-color: rgba(255, 255, 255, .1);
+
+                    .icon {
+                        .iconshow {
+                            display: block;
+                        }
+
+                        .default {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .course-list {
+        .item {
+            cursor: pointer;
+
+            .banner {
+                width: 260px;
+                height: 150px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all .4s;
+                }
+            }
+
+            &:hover {
+                .banner {
+                    img {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+        }
+    }
+}

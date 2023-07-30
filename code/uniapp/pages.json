@@ -1,0 +1,243 @@
+{
+	"pages": [
+		{
+			"path": "pages/startPage/index"
+		},
+		{
+			"path": "pages/base/index",
+			"style": {
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/index/index"
+		},
+        {
+        	"path": "pages/currency/index"
+        },
+        {
+        	"path": "pages/currency/list"
+        },
+        {
+        	"path": "pages/exchange/exchangeHis"
+        },
+        {
+        	"path": "pages/exchange/contractHis"
+        },
+        {
+        	"path": "pages/exchange/his"
+        },
+		{
+			"path": "pages/login/index"
+		},
+        {
+        	"path": "pages/purchase/index"
+        },
+        {
+        	"path": "pages/purchase/bill"
+        },
+		{
+			"path": "pages/reg/index"
+		},
+		{
+			"path": "pages/safe/forget-password"
+		},
+		{
+			"path": "pages/notice/detail"
+		},
+		{
+			"path": "pages/accountSettings/accountSettings"
+		},
+		{
+			"path": "pages/assets/recharge"
+		},
+        {
+        	"path": "pages/assets/paypal"
+        },
+		{
+			"path": "pages/assets/draw"
+		},
+		{
+			"path": "pages/assets/address-list"
+		},
+		{
+			"path": "pages/assets/edit-address"
+		},
+		{
+			"path": "pages/invite/index"
+		},
+		{
+			"path": "pages/invite/level"
+		},
+		{
+			"path": "pages/commission/index"
+		},
+		{
+			"path": "pages/commission/revoke"
+		},
+		{
+			"path": "pages/auth/index"
+		},
+		{
+			"path": "pages/auth/primary"
+		},
+		{
+			"path": "pages/auth/senior"
+		},
+		{
+			"path": "pages/safe/index"
+		},
+		{
+			"path": "pages/safe/login-password"
+		},
+		{
+			"path": "pages/safe/phone"
+		},
+		{
+			"path": "pages/safe/google"
+		},
+		{
+			"path": "pages/safe/transaction-password"
+		},
+		{
+			"path": "pages/safe/email"
+		},
+		{
+			"path": "pages/notice/index"
+		},
+		{
+			"path": "pages/notice/msg-detail"
+		},
+		{
+			"path": "pages/option/index"
+		},
+		{
+			"path": "pages/transfer/index"
+		},
+		{
+			"path": "pages/transfer/bill"
+		},
+		{
+			"path": "pages/assets/bill"
+		},
+		{
+			"path": "pages/exchange/index"
+		},
+		{
+			"path": "pages/assets/account-bill"
+		},
+        {
+        	"path": "pages/assets/currency-bill"
+        },
+		{
+			"path": "pages/help/index"
+		},
+		{
+			"path": "pages/help/detail"
+		},
+		{
+			"path": "pages/help/sort"
+		},
+		{
+			"path": "pages/list/list"
+		},
+		{
+			"path": "pages/option/delivery-detail"
+		},
+		{
+			"path": "pages/income/index"
+		},
+		{
+			"path": "pages/otc/send-ad"
+		},
+		{
+			"path": "pages/otc/order"
+		},
+		{
+			"path": "pages/otc/ad"
+		},
+		{
+			"path": "pages/otc/detail"
+		},
+		{
+			"path": "pages/otc/pays"
+		},
+		{
+			"path": "pages/otc/bind-pay"
+		},
+		{
+			"path": "pages/otc/bill"
+		},
+        {
+        	"path": "pages/service/service"
+        },
+		{
+			"path": "pages/service/index",
+			"style": {
+                "navigationBarTitleText": "咨询客服",
+				"navigationStyle": "default",
+				"app-plus": {  
+					"titleNView": {  
+					}  
+				}  
+			}
+		},
+        {
+        	"path": "pages/service/otc",
+        	"style": {
+                "navigationBarTitleText": "otc",
+        		"navigationStyle": "default",
+        		"app-plus": {  
+        			"titleNView": {  
+        			}  
+        		}  
+        	}
+        },
+		{
+			"path": "pages/upgrade/index",
+			"style": {
+				"navigationStyle": "custom",  
+				"app-plus": {
+					"animationType": "fade-in",
+					"background": "transparent", 
+					"backgroundColor": "rgba(0,0,0,0)",
+					"popGesture": "none"
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"app-plus": {
+			"titleNView": false
+		},
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "AMATAK",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^van-(.*)": "@/wxcomponents/vant/$1/index.vue",
+			"v-button": "@/layout/vButton.vue",
+			"v-input": "@/layout/vInput.vue",
+			"v-header": "@/layout/vHeader.vue",
+			"v-code": "@/layout/vCode.vue",
+			"v-country": "@/layout/vCountry.vue",
+			"v-link": "@/layout/vLink.vue",
+			"v-notice-bar": "@/layout/vNoticeBar.vue",
+			"v-lang": "@/layout/vLang.vue",
+			"v-qr": "@/layout/vQr.vue",
+			"v-scroll": "@/layout/vScroll.vue",
+			"v-paging": "@/layout/vPaging.vue",
+			"v-curve": "@/layout/vCurve.vue",
+            "v-dropdwon": "@/layout/vDropdwon.vue",
+			"v-picker": "@/layout/vPicker.vue",
+			"v-page": "@/layout/vPage.vue",
+			"not-data": "@/layout/notData.vue",
+            "special-Banner": "@/layout/specialBanner.vue"
+		}
+	}
+}

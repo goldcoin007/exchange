@@ -1,0 +1,406 @@
+// 加载图标库
+@include icon($icon-name, $icon-path);
+
+// 加载远程字体
+@include face($overpasses);
+@include face($opensans);
+
+// 标记上涨或者下跌的文本样式
+.increace {
+    color: $increace; // ⬆️
+}
+
+.decreace {
+    color: $decreace; // ⬇️
+}
+
+// 三角形图标基础样式 需要配合位置和颜色使用
+.triangle {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 7px solid transparent;
+}
+
+// 标记上涨或者是下跌的三角形符号
+.tri-inc {
+    @extend .triangle;
+    border-top: none;
+    border-bottom-color: $increace;
+    opacity: 0.6; // 淡化颜色
+}
+
+.tri-dec {
+    @extend .triangle;
+    border-bottom: none;
+    border-top-color: $decreace;
+    opacity: 0.6; // 淡化颜色
+}
+
+// 导航栏链接下拉的样式
+.tri-down {
+    @extend .triangle;
+    border-top: none;
+    border-bottom-color: #999;
+}
+
+.tri-up {
+    @extend .triangle;
+    border-bottom: none;
+    border-top-color: #666;
+}
+
+/* 一行显示 溢出则隐藏 */
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 强制折行 英文会断开 */
+.break-word {
+    word-break: break-all;
+    /*支持IE，chrome，FF不支持*/
+    word-wrap: break-word;
+    hyphens: auto;
+    /*支持IE，chrome，FF*/
+    // font-size: 15px;
+}
+
+.mtb15 {
+    margin: 15px 0;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.ptb70 {
+    padding: 70px 0;
+}
+
+.pt70 {
+    padding-top: 70px;
+}
+
+.pb40 {
+    padding-bottom: 40px;
+}
+
+.dropdown-toggle::after {
+    vertical-align: 1px;
+}
+
+.input-group-text,
+.form-control {
+    border-radius: 5px;
+}
+
+.table tbody + tbody {
+    border: none;
+}
+
+.heading {
+    // background: #1e2834;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 13px;
+    margin: 0;
+    color: #888894;
+}
+
+.green {
+    color: $increace;
+}
+
+.red {
+    color: $decreace;
+}
+
+.success {
+    color: $success;
+}
+
+.fail {
+    color: $fail;
+}
+
+.pending {
+    color: $pending;
+}
+.text-tips {
+    color: $caution;
+}
+.blue {
+    color: $cls-blue !important;
+}
+.light-purple {
+    color: $cls-purple;
+}
+.table td,
+.table th {
+    border-top: 1px solid #4e4e5d;
+}
+
+.input-group-text {
+    border: 1px solid #e0e3eb;
+}
+
+#darkDepthChart,
+#lightDepthChart {
+    width: 100%;
+    height: 349px;
+}
+
+.sm-gutters {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.sm-gutters > .col,
+.sm-gutters > [class*="col-"] {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #18214d59;
+}
+
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #18214d59;
+}
+
+.form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #18214d59;
+}
+
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #18214d59;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.num {
+    @include ff(OpenSans-Regular);
+}
+
+.nav-link,
+.pointer {
+    cursor: pointer;
+}
+// 设置字体大小
+$i: 12;
+
+@while $i<=30 {
+    .fn-#{$i} {
+        // @include fs($i);
+        font-size: $i + px !important;
+    }
+
+    $i: $i + 1;
+}
+
+// 设置宽度
+$i: 1;
+$basew: 24;
+@while $i <=$basew {
+    .w-#{$i}\/#{$basew} {
+        width: #{$i/$basew * 100}#{"%"};
+    }
+    .h-#{$i}\/#{$basew} {
+        height: #{$i/$basew * 100}#{"%"};
+    }
+    $i: $i + 1;
+}
+// 重写element css样式
+.el-dropdown-menu--medium {
+    max-height: 500px;
+    overflow: auto;
+}
+.el-select,
+.el-date-editor.el-input {
+    width: 100%;
+}
+
+.el-focus {
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.el-input__inner {
+    color: #495057;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    height: calc(1.5em + 0.75rem + 2px) !important;
+}
+
+.el-range-editor {
+    &.is-active {
+        @extend .el-focus;
+    }
+}
+
+.el-input {
+    &.el-date-editor {
+        .el-input__inner:focus {
+            @extend .el-focus;
+        }
+    }
+    &.is-focus {
+        .el-input__inner {
+            @extend .el-focus;
+        }
+    }
+}
+.el-carousel__mask {
+    background-color: transparent;
+}
+.el-carousel__item--card:not(.is-active) {
+    filter: blur(1px);
+}
+/* ----------------- end ele ------------------ */
+
+.btn-primary {
+    color: $cls-white;
+    border: none;
+    background-image: linear-gradient(to right, #6d9ef9, #1f5df4);
+}
+.btn-success {
+    color: $cls-white;
+    border: none;
+    background-image: linear-gradient(to right, #2fad66, #9de686);
+}
+.btn-danger {
+    color: $cls-white;
+    border: none;
+    background-image: linear-gradient(to right, #D31027, #EA384D);
+}
+.btn-info {
+    color: $cls-white;
+    border: none;
+    background-image: linear-gradient(to right, #1FA2FF, #12D8FA,#A6FFCB);
+}
+.btn-secondary{
+    border: none;
+}
+// 按钮阴影
+.btn-light-shadow {
+    box-shadow: 0 0 10px 0 #40a2ff;
+}
+.btn-outline-light {
+    color: $cls-white;
+    border-color: #5d5d6e;
+    color: #5d5d6e;
+}
+.bg-panel {
+    background: #222e3d;
+}
+.border-bottom {
+    border-bottom: 1px solid #4e4e5d !important;
+}
+
+.form-control,
+.el-input__inner,
+.el-focus,
+.el-range-editor.is-active,
+.el-input.el-date-editor .el-input__inner:focus,
+.el-input.is-focus .el-input__inner {
+    background-color: #1e2834;
+    color: white;
+    border-color: #4e4e5d;
+    &:focus {
+        background-color: #1e2834;
+        color: white;
+    }
+    &::-webkit-input-placeholder {
+        color: #6c757d;
+    }
+    &:-moz-placeholder {
+        color: #6c757d;
+    }
+    &::-moz-placeholder {
+        color: #6c757d;
+    }
+    &:-ms-input-placeholder {
+        color: #6c757d;
+    }
+}
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #676767;
+    color: #999;
+}
+.table {
+    color: white;
+}
+
+.nav-tabs,
+.modal-header {
+    border-bottom-color: #4e4e5d;
+}
+.modal-footer {
+    border-top-color: #4e4e5d;
+}
+.el-pagination button:disabled,
+.el-dialog,
+.el-pager li,
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+    background-color: transparent;
+}
+.el-pagination,
+.el-pagination .btn-next,
+.el-pagination .btn-prev,
+.el-pager li.btn-quicknext,
+.el-pager li.btn-quickprev {
+    color: #9292ac;
+}
+// 条纹表格
+.stripe {
+    tr {
+        &:nth-of-type(2n) {
+            background-color: #222e3d;
+        }
+        &:nth-of-type(2n-1) {
+            background-color: #1e2834;
+        }
+        td{
+            border-top-color: transparent;
+        }
+       
+    }
+    tbody{
+        tr{
+            &:first-of-type{
+                td{
+                    border-top-color:#4e4e5d;
+                }
+            }
+            &:hover{
+                background-color: #141e2c;
+            }
+        }
+        
+    }
+}

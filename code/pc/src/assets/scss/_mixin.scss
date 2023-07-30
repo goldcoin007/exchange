@@ -1,0 +1,88 @@
+// 版心布局样式
+@mixin major($primary) {
+	width: $primary;
+	// 视口控制
+	// overflow : $overstep;
+	// 清除可能的浮动
+	// .clear;
+}
+
+//样式函数 - 设置字体
+@mixin fs($size: 13, $un: px) {
+	// 指定字体大小和单位 例如 fs(10, px)
+	font-size: $size + $un;
+}
+
+@mixin ff($face) {
+	font-family: $face;
+}
+
+@mixin font($face, $size, $line-ht : null, $clr: inherit, $weight: normal, $style: normal) {
+	@include ff($face);
+	@include fs($size);
+
+	@if $line-ht != null {
+		line-height: $line-ht + px;
+	}
+
+	color : $clr;
+	font-weight: $weight;
+	font-style : $style;
+}
+
+/*
+* 图标文件名 作为字体名称 勿要改动
+*/
+@mixin icon($name, $path) {
+
+	/* 定义图标字体 */
+	@font-face {
+		font-family: $name;
+		// 使用{}嵌入表达式 替代~拼接的用法
+		// src        : url('#{$path}/#{$name}.eot?7kkyc2');
+		src : url('#{$path}/#{$name}.eot?7kkyc2#iefix') format('embedded-opentype'),
+		url('#{$path}/#{$name}.ttf?7kkyc2') format('truetype'),
+		url('#{$path}/#{$name}.woff?7kkyc2') format('woff'),
+		url('#{$path}/#{$name}.woff2?7kkyc2') format('woff2'),
+		url('#{$path}/#{$name}.svg?7kkyc2#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+}
+
+// 键值对形式传入参数 (key:value, key:a)
+@mixin face($paths) {
+
+	@each $name, $pathinfo in $paths {
+		@font-face {
+			font-family: $name;
+            src : url("#{$pathinfo}");
+            font-style: normal;
+            font-display: swap;
+		}
+    }
+    
+}
+
+// 默认水平分布 主轴和交叉轴起点对齐 交叉轴不拉伸
+@mixin flexible($direction:row, $distribution:flex-start, $aligns:flex-start, $wrap:nowrap) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $distribution;
+	align-items: $aligns;
+	flex-wrap: $wrap;
+}
+
+// css3效果兼容设置
+@mixin css3($style, $frames) {
+	-webkit-#{$style}: $frames;
+	/* Safari 和 Chrome */
+	-moz-#{$style}: $frames;
+	/* Firefox 4 */
+	-ms-#{$style}: $frames;
+	/* IE */
+	-o-#{$style}: $frames;
+	/* Opera */
+	#{$style}: $frames;
+}

@@ -1,0 +1,32 @@
+.order-page{
+    .panel-box {
+        border: 1px solid transparent;
+        border-radius: 2px;
+        .heading {
+            $i: 1;
+
+            @while $i<=6 {
+
+                .h#{$i},
+                h#{$i} {
+                    margin-bottom: 0;
+                }
+
+                $i:$i+1;
+            }
+            .tab-item{
+                cursor: pointer;
+                &:hover{
+                    color: $cls-blue;
+                }
+            }
+            .active{
+                color: $cls-blue;
+            }
+        }
+        .tab-content {
+            overflow-y: auto;
+            padding: 14px;
+        }
+    }
+}

@@ -1,0 +1,229 @@
+.option-page {
+    background: #e0e3eb;
+
+    .page-top {
+        padding-top: 1px;
+
+        .kline-box {
+            background: $cls-white;
+
+            .coin-change {
+                height: 50px;
+
+                .icon {
+                    height: 24px;
+                }
+            }
+        }
+
+        .opt-box {
+            width: 356px;
+
+            .time-box {
+                background: $cls-white;
+            }
+
+            .form-box {
+                background: $cls-white;
+
+                .form-coin:hover {
+                    color: #fff;
+                }
+
+                .sub {
+                    color: #fff;
+                    text-transform: uppercase;
+                    width: 100%;
+
+                    &.buy {
+                        background: $increace;
+                    }
+
+                    &.sell {
+                        background: $decreace;
+                    }
+                }
+            }
+
+        }
+
+        .bill-list {
+            background: $cls-white;
+
+            .list {
+                height: 565px;
+                overflow: auto;
+            }
+        }
+    }
+
+    .page-bottom {
+        min-height: 200px;
+        background: $cls-white;
+    }
+ 
+}
+.theme-switch{
+    position: relative;
+    height: 24px;
+    width: 60px;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    .theme-switch-button{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        background-color: #007bff;
+        border-radius: 2px;
+        text-align: center;
+        color: #fff;
+        .left,.right{
+            position: absolute;
+            top: 0;
+            width: 60px;
+            height: 100%;
+            box-sizing: border-box;
+            line-height: 24px;
+            color: #333;
+        }
+        .left{
+            right: 0;
+            padding-right: 24px;
+
+        }
+        .right{
+            left: 0;
+            padding-left: 24px;
+        }
+    }
+    &.active{
+        .theme-switch-button{
+            left:34px;
+        }
+    }
+}
+.dark-app {
+    $header: #2b2839;
+    $page-bg: #141e2c;
+    $head: #1e2834;
+    $panel:#222e3d;
+    $panel-1: #455c71;
+    $border: #2a2e39;
+    $color: #c0c4cc;
+
+    background: $page-bg;
+
+    .option-page {
+        background: $page-bg;
+        color: $color;
+
+        .page-top{
+            .bill-list{
+                background: $panel;
+            }
+            .opt-box {
+                .time-box,
+                .form-box {
+                    background: $panel;
+                }
+            }
+            .kline-box{
+                background: $panel;
+            }
+        } 
+    }
+
+    #common-header {
+        background: $header;
+        border-bottom-color: $page-bg;
+    }
+
+    .markets-pair-list .nav {
+        background: $head;
+    }
+
+    .heading {
+        background: $head;
+        color: $color;
+    }
+
+    .bg-light {
+        background-color: $head !important;
+    }
+    .border-right{
+        border-right-color:$border !important;
+    }
+    .form-control {
+        background-color: transparent;
+        border-color: #6c757d;
+        color: $color;
+    }
+
+    header nav a {
+        color: $color;
+    }
+
+    header nav a:hover {
+        color: #007bff;
+    }
+
+    .tab-content {
+        background: $panel;
+    }
+
+    .table {
+
+        td,
+        th {
+            border-top-color: $border;
+        }
+
+        tr:hover {
+            background: $page-bg;
+        }
+    }
+    tbody tr {
+        color: $color;
+    }
+    .nav-link{
+        color: $color;
+    }
+    .theme-switch .theme-switch-button .left, .theme-switch .theme-switch-button .right{
+        color: $color;
+    }
+    .border{
+        border-color:$border !important;
+    }
+    .el-collapse-item__wrap{
+        background: $panel-1;
+        border-color:$border;
+    }
+    
+    .el-popper[x-placement^=bottom] .popper__arrow::after{
+        border-bottom-color: $panel-1;
+    }
+    .el-collapse-item__content{
+        color:$color;
+    }
+    .el-popover,.el-collapse-item__header,.el-dropdown-menu{
+        background:$panel-1;
+        color:$color;
+        border-color:$border;
+    }
+    .el-dropdown-menu__item{
+        color: $color;
+    }
+    .el-pagination button:disabled,
+    .el-dialog,
+    .el-pager li {
+        background: transparent;
+    }
+    .el-button{
+        background: $page-bg;
+        border-color: $border;
+    }
+   
+}

@@ -1,0 +1,25 @@
+{
+  "name": "exchange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-validator": "^1.11.5",
+    "axios": "^0.20.0",
+    "clipboard": "^2.0.8",
+    "element-ui": "^2.15.3",
+    "highcharts": "^8.2.0",
+    "lodash": "^4.17.20",
+    "qs": "^6.9.4",
+    "vue-i18n": "^8.21.0",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1"
+  }
+}

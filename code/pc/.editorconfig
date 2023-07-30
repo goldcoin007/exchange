@@ -1,0 +1,16 @@
+root = true
+
+[*]
+# 字符编码
+charset = utf-8
+# 以空格形式缩进
+indent_style = space
+# 缩进的大小为4个空格
+indent_size = 4
+tab_width = 4
+# 定义换行符
+end_of_line = lf
+# 文件结尾处插入新行
+insert_final_newline = true
+# 除去换行行首的任意空白字符
+# trim_trailing_whitespace = true

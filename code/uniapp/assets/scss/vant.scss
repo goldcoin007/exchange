@@ -1,0 +1,226 @@
+:root {
+    --tabs-nav-background-color: transparent;
+    --button-plain-background-color: transparent;
+    --button-primary-background-color: #60c08c;
+    --button-primary-border-color: #60c08c;
+    --button-default-background-color: $panel-3;
+    --tab-text-color:#888894;
+    --button-default-border-color:#49495F;
+    --button-default-background-color:transparent;
+}
+
+.van-toast__loading {
+    color: $theme-1;
+}
+
+// nav-bar
+.van-nav-bar__left {
+    .van-nav-bar__arrow {
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+
+.van-hairline--bottom::after {
+    border-color: $border-color;
+}
+
+.van-nav-bar__content {
+    min-height: var(--nav-bar-height, 44px);
+}
+
+.nav-timename{
+	.van-tab--active{
+		.van-ellipsis{
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+	.van-tabs__line {
+	    background-color: transparent;
+	    height: 6px;
+	    &::before {
+	        top: -4px !important;
+	        width: 40px !important;
+	        height: 20px !important;
+	        // background: url(~@/assets/img/border_bottom.png) no-repeat !important;
+			
+	    }
+	}
+	.van-sticky{
+		z-index: 1;
+		.van-tabs__wrap {
+			border-bottom: 1px solid #f1a68c;
+			overflow: visible;
+		}
+	}
+}
+.hg {
+	.van-tabs__line{
+	&::before {
+	    background: url(~@/assets/img/border_bottom.png) no-repeat !important;
+		background-size: 100% 100% !important;
+	}}
+	.van-tab--active{
+		.van-ellipsis{
+			color: #333 !important;
+		}
+	}
+}
+.sun {
+	.van-tabs__line{
+	&::before {
+	    background: url(~@/assets/img/border_bottom_g.png) no-repeat !important;
+		background-size: 100% 100% !important;
+	}}
+	.van-tab--active{
+		.van-ellipsis{
+			color: #f2f2f2 !important;
+		}
+	}
+}
+.m-t-md .d-inline-block .rounded-lg .van-button{
+	box-shadow: 1px 5px 12px -2px #ef9b7e ;
+}
+.layout-page {
+    .van-swipe,
+    .van-tab--active {
+        // color: var(--nav-tab-active,#fff);
+    }
+
+    .van-nav-bar__title {
+        color: $light;
+    }
+
+    .van-nav-bar {
+        background-color: transparent;
+        &.van-hairline--bottom:after {
+            border-bottom-width: 0;
+        }
+    }
+
+    .van-popup {
+        background-color: $panel-3;
+    }
+    .van-popup--left {
+        background: $bg;
+    }
+    .van-field__input {
+        color: $light;
+    }
+
+    .van-steps {
+        background-color: transparent;
+    }
+
+    .van-stepper__minus,
+    .van-stepper__plus {
+        background-color: $panel-3;
+        color: $light;
+    }
+
+    .van-stepper__input {
+        background-color: $panel-3;
+        color: $light;
+    }
+
+    .van-count-down {
+        color: $light;
+    }
+
+    // search
+    .van-search {
+        background-color: transparent !important;
+
+        .van-search__content {
+            background-color: $panel-4 !important;
+            border-radius: 20px;
+        }
+    }
+    .van-hairline--bottom:after,
+    .van-hairline--left:after,
+    .van-hairline--right:after,
+    .van-hairline--surround:after,
+    .van-hairline--top-bottom:after,
+    .van-hairline--top:after,
+    .van-hairline:after {
+        border-color: var(--border-color);
+    }
+    .van-tag {
+        background-color: transparent;
+        color: $light;
+    }
+    .van-tab {
+        font-size: $font-size-md;
+    }
+    .van-tabs__line {
+        background-color: transparent;
+        height: 6px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--nav-tab-active,#fff);
+        }
+    }
+    .van-search__action,
+    .van-cell {
+        color: $light;
+    }
+    .van-button--default {
+        .van-button__text {
+            color: $text-color;
+        }
+        &.van-dialog__confirm{
+            .van-button__text {
+                color: $blue;
+            }
+        }
+    }
+   
+}
+.vant-toast-index{
+    position: relative;
+    z-index: 99999999;
+}
+// picker
+.van-picker {
+    background-color: $panel-4;
+}
+
+.van-picker-column__item {
+    color: $light;
+}
+
+[class*="van-hairline"]::after {
+    border-color: $border-color;
+}
+
+.van-number-keyboard__keys {
+    color: $gray-9;
+}
+
+.vant-popup-index {
+    position: fixed;
+    z-index: 6;
+}
+
+.default .van-button {
+    color: $black !important;
+}
+
+.layout-page {
+    .van-tabs__wrap--scrollable .van-tabs__nav--complete {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+::v-deep .tab-active-class{
+    color: $theme-1!important;
+}

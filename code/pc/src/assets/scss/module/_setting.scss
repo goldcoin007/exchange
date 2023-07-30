@@ -1,0 +1,35 @@
+.setting-page {
+    .text-tips {
+        color: $caution;
+    }
+    .blue {
+        color: $cls-blue;
+    }
+    .color-cls-gray{
+        color: $cls-gray;
+    }
+    .light-purple{
+        color: $cls-purple;
+    }
+    .panel-box {
+        border: 1px solid transparent;
+        border-radius: 2px;
+        .heading {
+            $i: 1;
+
+            @while $i<=6 {
+
+                .h#{$i},
+                h#{$i} {
+                    margin-bottom: 0;
+                }
+
+                $i:$i+1;
+            }
+        }
+        .tab-content {
+            overflow-y: auto;
+            padding: 14px;
+        }
+    }
+}
